@@ -10,7 +10,7 @@ test.describe('Front-end tests', () => {
   });
 
 
-
+  
   test('Test case 02 - Skapa en klient', async ({ page }) => {
     await page.goto('http://localhost:3000');
     await page.locator('input[type="text"]').fill(`${process.env.TEST_USERNAME}`);
